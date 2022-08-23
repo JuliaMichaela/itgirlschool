@@ -37,14 +37,19 @@ body {
     line-height: 1;
 }
 
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 /* ================================================================= */
 
 body {
-    font-family: "Open Sans", "Jost", sans-serif;
+    font-family: "Lato", "Georgia";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    color: #000000;
 }
 
 .wrapper {
@@ -67,14 +72,28 @@ body {
 /* ===========================Header====================================== */
 
 .header {
-    width: 100%;
-    min-height: 150px;
-    background: linear-gradient(90.45deg, #000000 -0.86%, #000000 10.37%, #000000 19.49%, #000000 28.74%, #000000 37.18%);
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0.02%;
+    bottom: 98.31%;
+
+    background: #FFFFFF;
+}
+
+#logo {
+    position: absolute;
+    left: 14.32%;
+    right: 81.53%;
+    top: 0.61%;
+    bottom: 98.93%;
+
+background: #01996D;
 }
 
 .header__container {
     display: flex;
-    min-height: 150px;
+    min-height: 85px;
     align-items: center;
 }
 
@@ -83,15 +102,33 @@ body {
 }
 
 .header__button {
-    flex: 0 0 148px;
+    box-sizing: border-box;
+
+/* Auto layout */
+
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 50px;
+    gap: 30px;
+
+    position: absolute;
+    left: 76.09%;
+    right: 14.38%;
+    top: 0.35%;
+    bottom: 98.65%;
+
+    background: #01996D;
+    border: 1px solid #01996D;
+    border-radius: 4px;
 }
 
 .menu {
-    display: flex;
-    justify-content: flex-end;
-    padding: 0px 60px 0px 0px;
+    position: absolute;
+    width: 557px;
+    height: 24px;
+    left: 527px;
+    top: 31px;
 }
 
 .menu__list {
@@ -100,25 +137,47 @@ body {
 
 .menu__item {
     margin: 0px 50px 0px 0px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+/* identical to box height */
+color: #292929;
 }
 
 .menu__link {
     line-height: 160%;
-    color: #ffffff94;
+    color: #292929;
 }
 
 .menu__link:hover {
-    color: #ffffff;
+    color: #01996D;
 }
 
 .button {
-    display: inline-block;
-    font-weight: 600;
-    line-height: 160%;
-    color: #FFFFFF;
-    padding: 16px 35px;
-    border-radius: 5px;
-    background-color: #FF4B32;
+/* btn-primary */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 13px 50px;
+gap: 30px;
+
+position: absolute;
+left: 76.09%;
+right: 14.38%;
+top: 0.35%;
+bottom: 98.65%;
+
+background: #01996D;
+border: 1px solid #01996D;
+border-radius: 4px;
 }
 
 .button:hover {
@@ -160,10 +219,13 @@ body {
 
 /* ===========================Hero====================================== */
 
-.hero {
+/*.hero {
     background: linear-gradient(90.45deg, #000000 -0.86%, #000000 10.37%, #000000 19.49%, #000000 28.74%, #000000 37.18%);
-    padding: 10px 10px 40px 0px;
+    padding: 10px 10px 40px 0px; 
 }
+*/
+
+/*
 
 .hero__container {
     display: flex;
@@ -207,6 +269,7 @@ body {
     color: #FFFFFF;
     opacity: 0.8;
 }
+*/
 
 /* =========================Offer======================================= */
 
@@ -272,6 +335,7 @@ body {
 
 /* =========================Gallery======================================= */
 
+/*
 .gallery {
     padding: 80px 0px 80px 0px;
 }
@@ -303,6 +367,8 @@ body {
 }
 
 /* =========================Follow======================================= */
+
+/*
 
 .follow {
     background: linear-gradient(90.45deg, #000000 -0.86%, #000000 10.37%, #000000 19.49%, #000000 28.74%, #000000 37.18%);
@@ -360,6 +426,8 @@ body {
 
 /* =========================News======================================= */
 
+
+/*
 .news__block-text {
     text-align: center;
     margin: 0px 0px 40px 0px;
@@ -410,9 +478,13 @@ body {
 /* =========================Footer======================================= */
 
 .footer {
-    background: #0D0402;
-    padding: 70px 0px 50px 0px;
-    margin: 140px 0px 0px 0px;
+    position: absolute;
+    width: 1920px;
+    height: 654px;
+    left: 0px;
+    top: 4445px;
+
+    background: #245852;
 }
 
 .footer__main {
@@ -463,36 +535,4 @@ body {
     text-align: center;
     line-height: 160%;
     color: #FFFFFF;
-}
-
-
-
-
-
-
-
-
-
-
-
-header {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 0.02%;
-    bottom: 98.31%;
-
-    background: #FFFFFF;
-}
-
-
-
-#logo {
-    position: absolute;
-    left: 14.32%;
-    right: 81.53%;
-    top: 0.61%;
-    bottom: 98.93%;
-
-background: #01996D;
 }
