@@ -91,17 +91,23 @@ body {
 background: #01996D;
 }
 
-.header__container {
-    display: flex;
-    min-height: 85px;
-    align-items: center;
+.header_container {
+    position: absolute;
+    width: 1920px;
+    height: 85px;
+    left: 0px;
+    top: 1px;
 }
 
-.header__menu {
-    flex: 1 1 auto;
+.header_menu menu {
+    position: absolute;
+    width: 557px;
+    height: 24px;
+    left: 527px;
+    top: 31px;
 }
 
-.header__button {
+.header_button {
     box-sizing: border-box;
 
 /* Auto layout */
@@ -136,7 +142,7 @@ background: #01996D;
 }
 
 .menu__item {
-    margin: 0px 50px 0px 0px;
+    /*margin: 0px 50px 0px 0px;*/
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
@@ -186,6 +192,7 @@ border-radius: 4px;
 
 /* ===========================Title and text====================================== */
 
+/*
 .block-text__title {
     font-family: "Josefin Sans", "Jost", sans-serif;
     font-style: normal;
@@ -273,6 +280,8 @@ border-radius: 4px;
 
 /* =========================Offer======================================= */
 
+
+/*
 .offer {
     padding: 70px 0px 80px 0px;
 }
