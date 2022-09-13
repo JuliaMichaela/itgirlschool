@@ -1,3 +1,15 @@
+
+
+
+
+
+
+
+
+
+
+/*
+
 *,
 *::before,
 *::after {
@@ -45,6 +57,9 @@ body {
 
 /* ================================================================= */
 
+
+/*
+
 body {
     font-family: "Lato", "Georgia";
     font-style: normal;
@@ -71,6 +86,8 @@ body {
 
 /* ===========================Header====================================== */
 
+
+/*
 .header {
     position: absolute;
     left: 0%;
@@ -112,6 +129,8 @@ background: #01996D;
 
 /* Auto layout */
 
+
+/*
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -140,15 +159,18 @@ background: #01996D;
 .menu__list {
     display: flex;
 }
-
+/*
 .menu__item {
     /*margin: 0px 50px 0px 0px;*/
+   
+   /*
     font-family: 'Lato';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
 /* identical to box height */
+/*
 color: #292929;
 }
 
@@ -163,12 +185,12 @@ color: #292929;
 
 .button {
 /* btn-primary */
-
+/*
 
 box-sizing: border-box;
 
 /* Auto layout */
-
+/*
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -486,6 +508,8 @@ border-radius: 4px;
 
 /* =========================Footer======================================= */
 
+
+/*
 .footer {
     position: absolute;
     width: 1920px;
