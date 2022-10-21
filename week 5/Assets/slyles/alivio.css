@@ -1,12 +1,134 @@
+ul,
+li{
+    list-style: none;
+    display:flex; 
+}
+body {
+    font-family: "Lato", "Georgia";
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color:#292929;
+}
+
+a:hover {
+    color: red;
+}
+
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_menu {
+    display: flex;
+}
+
+.header_logo {
+    margin: 30px 100px 30px 100px;
+    
+}
+
+.header_menu {
+    background-color: aqua;
+    color:#292929;
+    margin: 30px 30px 30px 30px;
+    font-size: 20px;
+    line-height: 24px;
+    /* gap: 72px; */
+}
+
+
+.menu ul li {
+    list-style-type: none;
+    float: left;
+    margin: 0 72px; /*расстояние между пунктами по ширине*/
+}
+.menu__list {
+    display: flex;
+}
 
 
 
+.menu_link {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 72px;
+    color:#292929 ;
+}
+
+.header_btn {
+    display: flex;
+    width: 59px;
+    height: 24 px;
+    align-items: center;
+}
+.header_button {
+    display: flex;
+    width: 183px;
+    height: 51px;
+    align-items: center;
+    padding: 13px 50px;
+    gap: 30px;
+    background: #01996D;
+    box-sizing: border-box;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+    margin: 17px 276px 17px 35px;
+}
+
+.button {
+    color: white;
+}
 
 
+.hero_container {
+    display: flex;
+    background-image: url(../images/hero_alivio.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
+    width: 100vw;
+    height: 100vh;
+}
 
+.hero_content {
+    display: ;
+    width: 440px;
+    height: 384px;
+    margin-left: 275px;
+}
 
+.hero_title {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 74px;
 
+    color: #01996D;
+}
+
+.hero_button {
+    display: flex;
+    width: 227px;
+    height: 65px;
+    align-items: center;
+    padding: 20px 50px;
+    gap: 30px;
+    background: #01996D;
+    box-sizing: border-box;
+    border: 1px solid #01996D;
+    border-radius: 4px;
+}
 
 /*
 
@@ -17,16 +139,6 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul,
-ol,
-li {
-    list-style: none;
 }
 
 img {
@@ -60,12 +172,6 @@ body {
 
 /*
 
-body {
-    font-family: "Lato", "Georgia";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-}
 
 .wrapper {
     overflow: hidden;
