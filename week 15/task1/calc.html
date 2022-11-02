@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Калькулятор</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Калькулятор</h2>
+        <div class="container">
+            <label>
+                <p>Введите первое число</p>
+                <input id="number1" type="text">
+            </label>
+            <label>
+                <p>Введите второе число</p>
+                <input id="number2" type="text"> 
+            </label>
+        </div class="btn">
+        <button class="btncalc" onclick="plus();">Сложение</button>
+        <button class="btncalc" onclick="minus();">Вычитание</button>
+        <button class="btncalc" onclick="times();">Умножение</button>
+        <button class="btncalc" onclick="divide();">Деление</button>
+        <div class="container">
+            <label>
+                <p>Итого:</p>
+                <input id="result" type="text" readonly/> 
+            </label>
+        </div>
+    </div>
+    <script src="assets/js/calc.js"></script>
+</body>
+
+</html>

@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Калькулятор</title>
-</head>
-<body>
-    <label >
-        <p>Введите первое число</p>
-        <input id="number1" type="number">
-    </label>
-
-    <label>
-        <p>Введите второе число</p>
-        <input id="number2" type="number"> 
-    </label>
-
-    <div><button onclick="plus();">Сложение</button><div>
-
-    <div><button onclick="minus();">Вычитание</button></div>
-    
-    <div><button onclick="times();">Умножение</button></div>
-    
-    <div><button onclick="divide();">Деление</button></div>
-
-    <input id="result" readonly /> 
-
-    <script>
-        let result;
+let result;
         let number1;
         let number2;
     
@@ -67,8 +37,13 @@
     function showResultHTML() {
         document.getElementById("result").value = result;
     }
-    
-    </script>
-</body>
 
-</html>
+
+    //function divide() {
+     //   getValues ();
+     //   result = number1 / number2;
+      //  if (number2 === 0) {
+     //       alert("На ноль делить нельзя")
+     //  }
+     //   showResultHTML();
+ //  }//

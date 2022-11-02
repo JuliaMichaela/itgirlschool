@@ -1,0 +1,19 @@
+.container {
+    
+    display: flex;
+    justify-content: center;
+}
+
+.yellow {
+    background-color: yellow;
+    color: blueviolet;
+}
+
+.white {
+    background-color: transparent;
+}
+
+.green {
+    background-color: green;
+    color: yellow;
+}
