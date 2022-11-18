@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator cars</title>
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main>
+            <section class="calculator__container">
+                <div class="calculator__message"></div>
+                <div class="calculator__block">
+                    <div class="calculator__title">
+                        <h2 class="title">Калькулятор стоимости авто</h2>
+                    </div>
+
+                    <div class="calculator__form form-calc" name="form">
+
+                        <div class="form-calc">
+                            <select class="form-calc-select" id="brand" name="brand">
+                                <option value="0" disabled selected>Марка</option>
+                                <option value="100">Lexus</option>
+                                <option value="200">Nissan</option>
+                                <option value="300">KIA</option>
+                                <option value="400">Toyota</option>
+                            </select>
+                        </div>
+
+                        <div class="form-calc">
+                            <select class="form-calc-select" id="model" name="model" disabled="disabled"
+                                placeholder="Модель">
+                                <option value="0" disabled selected>Модель</option>
+                            </select>
+                        </div>
+
+                        <div class="form-calc">
+                            <select class="form-calc-select" id="year" name="year" disabled="disabled"
+                                placeholder="Год выпуска">
+                                <option value="0" disabled selected>Год выпуска</option>
+                                <option value="100000">2022</option>
+                                <option value="0">2021</option>
+                            </select>
+                        </div>
+
+                        <div class="form-calc">
+                            <select class="form-calc-select" id="modification" name="modification" disabled="disabled"
+                                placeholder="Модификация">
+                                <option value="0" disabled selected>Модификация</option>
+                                <option value="0">2.5 AT/180/Бензин/Передний</option>
+                                <option value="100000">3,5 AT/260/Бензин/Передний</option>
+                            </select>
+                        </div>
+
+                        <div class="form-calc">
+                            <select class="form-calc-select" id="equipment" name="equipment" disabled="disabled"
+                                placeholder="Комплектация">
+                                <option value="0" disabled selected>Комплектация</option>
+                                <option value="0">Classic</option>
+                                <option value="50000">Comfort</option>
+                                <option value="90000">Executive</option>
+                                <option value="180000">Premium</option>
+                            </select>
+                        </div>
+
+                        <div class="form-calc">
+                            <div class="form-calc-radio">
+                                <input type="radio" id="сolour_class_0" name="сolour" class="radio-control" value="0">
+                                <label class="radio-label" for="сolour_class_0">Жемчужно-белый / Perl White, 10 000 ₽</label>
+                            </div>
+
+                            <div class="form-calc-radio">
+                                <input type="radio" id="сolour_class_1" name="сolour" class="radio-control"
+                                    value="15000">
+                                <label class="radio-label" for="сolour_class_1">Альпийский зеленый / Alpine Green, 15 000 ₽</label>
+                            </div>
+
+                            <div class="form-calc-radio">
+                                <input type="radio" id="сolour_class_2" name="сolour" class="radio-control"
+                                    value="15000">
+                                <label class="radio-label" for="сolour_class_2">Тёмно-фиолетовый / Deep Purple, 20 000 ₽</label>
+                            </div>
+
+                            <div class="form-calc-radio">
+                                <input type="radio" id="сolour_class_3" name="сolour" class="radio-control"
+                                    value="15000">
+                                <label class="radio-label" for="сolour_class_3">Тихоокеанский синий / Pacific blue, 25 000 ₽</label>
+                            </div>
+                        </div>
+
+                        <div class="calculator__checkbox">
+                            <input type="checkbox" name="car-mats" id="car-mats" class="checkbox-control" value="7000">
+                            <label class="checkbox-label" for="car-mats">Тонирование стекол</label>
+
+                            <input type="checkbox" name="tinting" id="tinting" class="checkbox-control" value="20000">
+                            <label class="checkbox-label" for="tinting">Защита кузова</label>
+                        </div>
+                        <div class="form__submit">
+                            <button id="button" class="button">Рассчитать</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
