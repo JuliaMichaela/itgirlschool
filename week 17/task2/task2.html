@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .messenger {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 200px;
+        }
+        .spam {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="messenger">
+        <div class="container"></div>
+        <div class="spam">
+            <input type="text" id="newMessage" placeholder="Введите сообщение">
+            <button id="sendButton" onclick="addMessage()">Отправить</button>
+        </div>
+    </div>
+
+    <script>
+        let messages = [];
+
+        function addMessage() {
+            let sms = document.querySelector('#newMessage').value,
+            spamStr = sms.toLowerCase();
+            messages.push(sms);
+            chatMessages();
+        }
+
+        function chatMessages() {
+            let optionsString = " ";
+
+            for(let m of messages) {
+                m = m.replace(/viagra/i,'***').replace(/xxx/i, '***');
+                optionsString += `<div><span>${m}<span></div>`;
+            }
+            document.querySelector(".container").innerHTML = optionsString;
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            chatMessages();
+        });
+
+    </script>
+</body>
+</html>
