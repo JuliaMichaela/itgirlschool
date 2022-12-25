@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>JS TASK</title>
+</head>
+<body class="page">
+    <div class="container">
+        <h2 class="title">Создайте аккаунт</h2>
+        <form class="container" name="form" action="#" novalidate >
+            <div class="form_container">
+                <label for="name" class="text label-text"></label>
+                <input class="text input-text" type="text" placeholder="ФИО" id="name" required />
+            </div>
+            <div class="form_container">
+                <label for="age" class="text label-text"></label>
+                <input class="text input-text" type="number" placeholder="Возраст" max="100" id="age"required />
+            </div>
+            <div class="form_container">
+                <label for="phone" class="text label-text"></label>
+                <input class="text input-text" type="tel" placeholder="+7 (xхx) xxx-xx-xx" id="tel" required/>
+            </div>
+            <div class="form_container">
+                <label for="email" class="text label-text"></label>
+                <input class="text input-text" type="text" placeholder="Электронная почта" id="userEmail" pattern="^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$" required />
+            </div>
+            <div class="form_container">
+                <label for="password" class="text label-text"></label>
+                <input class="text input-text" type="text" placeholder="Пароль (не менее 5 знаков)" id="userPassword" minlength="5"
+				maxlength="12" required />
+            </div>
+            <div id="result"></div>
+        </form>
+    <button type="button" class=" btn signup_btn" id="registration">
+        СОЗДАТЬ АККАУНТ
+    </button>
+    </div>
+    
+    <script src="assets/js/form.js"></script>
+
+</body>
+</html>

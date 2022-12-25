@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            height: 200px;
+        }
+        .spam {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body class="page">
+    <div class="container">
+        <div>
+            <h1 class="title text">Комментарии</h1>
+        </div>
+        <form class="form">
+            <input
+                id="userName"
+                type="text"
+                placeholder="логин"
+                required
+                class="userName text"
+            />
+            <input
+                id="comment"
+                type="text"
+                placeholder="комментарий"
+                required
+                class="comment text"
+            />
+            <input type="text" placeholder="ссылка на картинку" class="img" />
+        </form>
+
+        <div class="messages text"></div>
+
+        <button class="btn text" type="submit">Отправить</button>
+    </div>
+    <script src="./task3.js"></script>
+</body>
+
+</html>

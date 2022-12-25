@@ -1,0 +1,42 @@
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container input {
+    border-radius: 15px;
+    border:none;
+    padding-left: 30px;
+    width: 350px;
+    height: 40px;
+    background-color: rgb(247, 245, 245);
+}
+
+.form_container {
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.signup_btn {
+    background-color: #1493f5;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500px;
+    margin-top: 10px;
+    width: 380px;
+}
+
+#errorMessage {
+    color: rgb(255, 34, 45);
+}

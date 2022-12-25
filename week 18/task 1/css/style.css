@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+    color: rgb(7, 8, 98);
+    background-color: antiquewhite;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
