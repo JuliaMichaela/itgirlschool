@@ -1,0 +1,643 @@
+.body {
+    //background-color: linear-gradient(90deg, rgb(72, 1, 40), rgb(32, 1, 16));
+    // color: #fff;
+    // background-image: url(/JavaScript-GroupProject/assets/images/body.png);
+    height: 100%;
+  }
+  
+  header {
+    /* padding: 2rem; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem auto 5rem;
+  }
+  
+  h1 {
+    text-transform: uppercase;
+    //   align-self: center;
+  }
+  
+  .settings,
+  .finance-moment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  
+  .settings > div > img {
+    max-width: 60px;
+    object-fit: cover;
+    border-radius: 18px;
+    padding: 0.6rem;
+    background: white;
+  }
+  .moment {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    row-gap: 10px;
+    font-size: small;
+  }
+  .moment > h2 {
+    text-align: right;
+  }
+  span {
+    font-weight: bold;
+  }
+  .content {
+    display: grid;
+    grid-template-areas: "left-wrapper weekday-info calculator";
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 2rem;
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+  h2 {
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+  }
+  h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .calculator {
+    // width: 100%;
+    display: flex;
+    grid-area: calculator;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    box-shadow: 0 0 10px 6px rgb(0, 0, 0, 0.2);
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    height: fit-content;
+    border-radius: 4px;
+    max-width: fit-content;
+    //margin-top: 59vh;
+  }
+  
+  .calculate-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+  .calculate-buttons > button,
+  #result-button {
+    font-size: larger;
+    min-width: 44px;
+    min-height: 44px;
+    // border-radius: 2px;
+  }
+  
+
+  /* ----- Office ----- */
+
+.office-body {
+    background: rgb(245, 245, 248);
+  }
+  .office-box {
+    background: linear-gradient(
+      rgb(249, 245, 248),
+      rgb(252, 255, 255),
+      rgb(249, 245, 248)
+    );
+  }
+  .office-title {
+    color: rgb(27, 54, 151);
+  }
+  .office-button {
+    background: rgb(125, 143, 205);
+    color: #fff;
+    border: none;
+    border-bottom: 6px solid rgb(82, 97, 149);
+  }
+  .office-button:hover {
+    border-bottom: 3px solid rgb(82, 97, 149);
+    background: rgb(112, 132, 205);
+  }
+  
+  /* ----- Dark-Theme ----- */
+  
+  .dark-body {
+    background: rgb(34, 33, 33);
+    color: rgb(237, 233, 233);
+  }
+  .dark-box {
+    background: linear-gradient(
+      rgba(57, 55, 55),
+      rgb(64, 62, 62),
+      rgb(68, 66, 66),
+      rgb(64, 62, 62),
+      rgba(57, 55, 55)
+    );
+    box-shadow: 0 0 10px 6px rgb(15, 14, 14);
+  }
+  .dark-title {
+    color: rgb(59, 205, 253);
+  }
+  .dark-button {
+    background: rgb(59, 205, 253);
+    border: none;
+    border-bottom: 6px solid rgba(15, 14, 14, 0.5);
+  }
+  .dark-button:hover {
+    border-bottom: 3px solid rgb(15, 14, 14, 0.5);
+    background: rgb(56, 193, 239);
+  }
+  
+  /* ----- Parking ----- */
+  
+  .parking-body {
+    background: linear-gradient(
+      rgb(22, 19, 19),
+      rgb(37, 37, 37),
+      rgb(49, 49, 49),
+      rgb(37, 37, 37),
+      rgb(22, 19, 19)
+    );
+    color: #fdfd30;
+  }
+  .parking-box {
+    background: linear-gradient(
+      rgb(56, 59, 59),
+      rgb(65, 62, 62),
+      rgb(71, 66, 66),
+      rgb(65, 62, 62),
+      rgb(56, 59, 59)
+    );
+    color: #fff;
+    box-shadow: 0 0 10px 6px rgb(3, 3, 3);
+  }
+  .parking-title {
+    color: #fdfd30;
+  }
+  .parking-button {
+    background: #fdfd30;
+    border: none;
+    border-bottom: 6px solid #afaf25;
+  }
+  .parking-button:hover {
+    border-bottom: 3px solid #afaf25;
+    background: #e0e013;
+  }
+  
+  /* ----- Underground ----- */
+  
+  .underground-body {
+    background: #110602;
+    color: #f16506;
+  }
+  .underground-box {
+    background: linear-gradient(
+      rgb(45, 31, 30),
+      rgb(52, 37, 36),
+      rgb(57, 41, 40),
+      rgb(52, 37, 36),
+      rgb(45, 31, 30)
+    );
+    color: #9e9997;
+    box-shadow: 0 0 10px 6px rgba(128, 80, 43, 0.8);
+  }
+  .underground-title {
+    color: #f16506;
+  }
+  .underground-button {
+    background: #f16506;
+    color: #fff;
+    border: none;
+    border-bottom: 6px solid #80502b;
+  }
+  .underground-button:hover {
+    border-bottom: 3px solid #80502b;
+    background: #e45e05;
+  }
+  
+  /* ----- Skyblue ----- */
+  
+  .skyblue-body {
+    background: linear-gradient(
+      skyblue,
+      rgb(170, 219, 239),
+      rgb(237, 241, 243),
+      rgb(170, 219, 239),
+      skyblue
+    );
+    color: #083b49;
+  }
+  .skyblue-box {
+    background: linear-gradient(
+      rgb(213, 232, 247),
+      rgb(221, 236, 247),
+      rgb(228, 238, 245),
+      rgb(221, 236, 247),
+      rgb(213, 232, 247)
+    );
+    color: #383635;
+    box-shadow: 0 0 10px 6px rgba(19, 90, 117, 0.5);
+  }
+  .skyblue-title {
+    color: rgb(6, 126, 159);
+  }
+  .skyblue-button {
+    background: rgb(20, 167, 208);
+    color: #fff;
+    border: none;
+    border-bottom: 6px solid rgb(11, 115, 143);
+  }
+  .skyblue-button:hover {
+    border-bottom: 3px solid rgb(9, 96, 120);
+    background: rgb(15, 148, 185);
+  }
+  
+  /* ----- Bubble-Gum ----- */
+  
+  .bubble-gum-body {
+    background: linear-gradient(
+      rgb(254, 174, 187),
+      #cce4f0,
+      #fff,
+      #cce4f0,
+      rgb(254, 174, 187)
+    );
+    color: rgb(150, 66, 80);
+  }
+  .bubble-gum-box {
+    background: linear-gradient(
+      rgb(247, 213, 219),
+      rgb(246, 217, 222),
+      rgb(245, 223, 227),
+      rgb(246, 217, 222),
+      rgb(247, 213, 219)
+    );
+    color: #383635;
+    box-shadow: 0 0 10px 6px rgba(197, 81, 100, 0.5);
+  }
+  .bubble-gum-title {
+    color: rgb(207, 54, 80);
+  }
+  .bubble-gum-button {
+    background: rgb(214, 94, 114);
+    color: #fff;
+    border: none;
+    border-bottom: 6px solid rgb(150, 66, 80);
+  }
+  .bubble-gum-button:hover {
+    border-bottom: 3px solid rgb(150, 66, 80);
+    background: rgb(202, 91, 109);
+  }
+  
+  /* ----- Violet ----- */
+  
+  .violet-body {
+    background: linear-gradient(
+      rgb(85, 39, 154),
+      rgb(166, 132, 215),
+      #fff,
+      rgb(166, 132, 215),
+      rgb(85, 39, 154)
+    );
+    color: #fff;
+  }
+  .violet-box {
+    background: linear-gradient(
+      rgb(204, 183, 237),
+      rgb(208, 195, 235),
+      rgb(209, 206, 233),
+      rgb(208, 195, 235),
+      rgb(204, 183, 237)
+    );
+    color: #383635;
+    box-shadow: 0 0 10px 6px rgba(58, 51, 63, 0.5);
+  }
+  .violet-title {
+    color: rgb(85, 39, 154);
+  }
+  .violet-button {
+    background: rgb(124, 57, 225);
+    color: #fff;
+    border: none;
+    border-bottom: 6px solid rgb(100, 53, 169);
+  }
+  .violet-button:hover {
+    border-bottom: 3px solid rgb(85, 39, 154);
+    background: rgb(121, 56, 218);
+  }
+  
+  /* ----- Wildberry ----- */
+  
+  .wildberry-body {
+    background: linear-gradient(
+      rgb(252, 147, 228),
+      rgb(121, 248, 208),
+      #fff,
+      rgb(121, 248, 208),
+      rgb(252, 147, 228)
+    );
+    color: #fff;
+  }
+  .wildberry-box {
+    background: linear-gradient(
+      rgb(255, 220, 247),
+      rgb(255, 229, 249),
+      rgb(255, 220, 247)
+    );
+    color: #383635;
+    box-shadow: 0 0 10px 6px rgb(103, 216, 181);
+  }
+  .wildberry-title {
+    color: #383635;
+  }
+  .wildberry-button {
+    background: rgb(121, 248, 208);
+    // color: #fff;
+    border: none;
+    border-bottom: 6px solid rgb(101, 203, 171);
+  }
+  .wildberry-button:hover {
+    border-bottom: 3px solid rgb(101, 203, 171);
+    background: rgb(110, 226, 190);
+  }
+
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    // border: 1px solid #8adacb;
+  }
+
+  
+  @font-face {
+    font-family: "Red Hat Display";
+    src: url(/JavaScript-GroupProject/assets/fonts/RedHatDisplay-VariableFont_wght.ttf)
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Red Hat Display";
+    src: url(/JavaScript-GroupProject/assets/fonts/RedHatDisplay-Italic-VariableFont_wght.ttf)
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Casus Pro";
+    src: url(/JavaScript-GroupProject/assets/fonts/CasusPro.ttf)
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Lexend";
+    src: url(/JavaScript-GroupProject/assets/fonts/Lexend-VariableFont_wght.ttf)
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Koulen";
+    src: url(/JavaScript-GroupProject/assets/fonts/Koulen-Regular.ttf)
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "Architects Daughter";
+    src: url(/JavaScript-GroupProject/assets/fonts/ArchitectsDaughter-Regular.ttf)
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Montserrat";
+    src: url(/JavaScript-GroupProject/assets/fonts/Montserrat-VariableFont_wght.ttf)
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "Anybody";
+    src: url(/JavaScript-GroupProject/assets/fonts/Anybody-VariableFont_wdth\,wght.ttf)
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Plus&family=Space+Grotesk:wght@300;400;500;600&family=Vollkorn+SC:wght@600&display=swap");
+
+  .left-wrapper {
+    // width: 100%;
+    grid-area: left-wrapper;
+  }
+  
+  .left-wrapper,
+  .form,
+  .financial-literacy {
+    display: flex;
+    //justify-content: space-around;
+    flex-direction: column;
+    row-gap: 2rem;
+    
+  }
+  .form,
+  .financial-literacy {
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 4px;
+    max-width: 238px;
+  }
+  .form > button {
+    width: 50%;
+    min-height: 44px;
+    align-self: center;
+    margin: 1rem auto;
+    font-size: large;
+    // border-radius: 2px;
+  }
+  
+  .gallery-buttons > button {
+    min-width: 44px;
+    min-height: 34px;
+    font-size: larger;
+    // border-radius: 2px;
+  }
+
+  .settings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  .settings > div {
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: 22px;
+  }
+  .nav-trigger {
+    position: relative;
+    width: 45px;
+    height: 45px;
+  }
+  
+  label[for="nav-trigger"] {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    z-index: 10;
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+    background: white;
+    border-radius: 22px;
+    background-image: url(/JavaScript-GroupProject/assets/images/settings.svg);
+    background-size: contain;
+  }
+  
+  .prefferencies {
+    width: 21%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgb(115, 114, 114);
+    z-index: 2;
+    padding: 2rem 1rem 2rem 1rem;
+    display: none;
+  }
+  
+  .choose-font {
+    height: 220px;
+  }
+  .choose-font,
+  .color-theme {
+    margin-bottom: 3rem;
+  }
+  
+  .choose-font,
+  .button-animate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+  }
+  
+  .weekday-info {
+    // width: 100%;
+    display: grid;
+    grid-area: weekday-info;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem ;
+    row-gap: 2rem;
+  }
+  .weekday-info_2 {
+    // width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 4rem ;
+    row-gap: 4rem;
+    padding: 2rem 2rem 2rem 2rem;
+  }
+  .weekday-info_3 {
+    // width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem ;
+    row-gap: 4rem;
+    padding: 2rem 16rem 2rem 16rem;
+  }
+  .weekDay {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+  .date-info {
+    // width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    box-shadow: 0 0 10px 6px rgb(0, 0, 0, 0.2);
+    border-radius: 4px;
+    max-width: 40vw;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+  
+  h3 {
+    font-weight: bold;
+    text-align: center;
+  }
+  input {
+    text-align: center;
+    height: 28px;
+    width: 10vw;
+    font-weight: bold;
+  }
+  input::placeholder {
+    font-weight: lighter;
+  }
+  .current-amount,
+  .income,
+  .total-sum {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    box-shadow: 0 0 10px 6px rgb(0, 0, 0, 0.2);
+    border-radius: 4px;
+    max-width: 40vw;
+  }
+  .expense {
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    box-shadow: 0 0 10px 6px rgb(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  .current-amount > div,
+  .income > div,
+  .expense > div,
+  .total-sum > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 1rem;
+  }
+  
+  .expense > div > img {
+    max-width: 30px;
+  }
+  .expense > button {
+    width: 50%;
+    min-height: 44px;
+    align-self: center;
+    margin: 1rem auto 0.5rem;
+    font-size: larger;
+    // border-radius: 2px;
+  }
+  .total-sum > div > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+  

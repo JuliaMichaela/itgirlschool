@@ -1,6 +1,6 @@
 let result;
-        let number1;
-        let number2;
+let number1;
+let number2;
     
         function plus() { 
         getValues ();
